@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MIS3690 Survey</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<style>
+	td {padding-right:40px}
+	</style>
+	
+</head>
+<body>
+
+	<h1>MIS3690 Student Survey</h1>	
+	<p>Please complete the following survey.  You must answer each question.  When you are done,
+	    please click on the Submit button.</p>
+	<form action = "http://wtspring13sec2.babson.edu/gordon/mailer.php" method = "post">
+		<p> Last Name
+			<input type= "text" name="lastname" maxlength="100" value="Enter here" />
+			First Name
+			<input type= "text" name="firstname" maxlength="100" value="Enter here" />
+		</p>
+		<p>Gender:
+			Male <input type="radio" name="gender" value="male"/> 
+			Female <input type="radio" name="gender" value="female" />
+		</p>
+		<p>What grade do you expect to receive?
+			<select name = "D1">
+			<option value = "A">A</option>
+			<option value = "B+">B+</option>
+			<option value = "B">B</option>
+			<option value = "B-">B-</option>
+			<option value = "C+">C+</option>
+			<option value = "C">C</option>
+			<option value = "C-">C-</option>
+			<option value = "D+">D+</option>
+			<option value = "D">D</option>
+			<option value = "D-">D-</option>
+			<option value = "Other">Other</option>
+		    </select>
+		</p>
+		<table>
+			<tr><td>Which topics do you find to be fun?</td>
+				<td>
+					<input type = "checkbox" name = "I" Value = "Images" />Images<br />
+					<input type = "checkbox" name = "C" Value = "CSS" />CSS<br />
+					<input type = "checkbox" name = "T" Value = "Tables" />Tables<br />
+					<input type = "checkbox" name = "F" Value = "Forms" />Forms<br />
+				</td>
+			</tr>
+		</table>
+		<p>Please add any comments you have</p>
+		<textarea name="comments" rows="5" cols="29">
+		</textarea>	
+		<p>
+		<input type="submit" value="Submit" name="Submit"  />
+		<input type="reset" value="Reset" name="Reset" />
+		</p>
+	</form>
+</body>
+</html>
