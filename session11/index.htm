@@ -1,0 +1,79 @@
+<!DOCTYPE html >
+<html lang="en">
+<Head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Xinyi Zheng</title>
+    <link rel = "stylesheet" type = "text/css" href = "external.css" />
+    <style> /*font,text, and color styles*/
+        h1{font-family: "verdana"; font-weight: bold; font-size: 54pt; text-align: center; color:Ivory; border: 5px solid lightskyblue}
+        p{font-family: "Arial"; font-style: italic; font-size: 28pt; text-indent: 1.27cm; color: lavenderblush; text-align: center; border:5px dotted lightsteelblue; padding:30px 10% 10px 15%}
+        .facts{border:palegoldenrod solid}
+        hr{color:lavenderblush}
+        h2,h3{text-align: center}
+        body{background-color: lightslategray; margin: 3px 3px 3px 3px}
+        span{font-style: italic; color: silver; font-variant: small-caps}
+        img{width:500px}
+        @font-face {
+            font-family: "December Holidays";
+            src: url("December Holidays.ttf");
+        }
+        ol{font-family: "December Holidays"; font-style: italic; font-size: 28pt; text-indent: 1.27cm; color: lavenderblush; width: 10em; margin: 0px auto 0px auto}
+    </style>
+    <script>
+        function ChgStyle()
+        {
+            x=document.getElementById("myh1");
+
+        style.color="green";
+        style.font="30pt 'Comic Sans MS'";
+        style.textAlign="center"
+        }
+
+        function ChgStyle()
+        {
+        document.getElementById("myh1").style.color="green";
+        document.getElementById("myh1").style.font="30pt 'Comic Sans MS'";
+        document.getElementById("myh1").style.textAlign="center";
+        } 
+        function ChgToXinyi()
+	    {document.getElementById("xinyi").src="Xinyi.jpg";} 
+	    function ChgToMe()
+	    {document.getElementById("xinyi").src="about me.jpg";}
+
+        function changedaily()
+        {
+            document.getElementById("x").innerHTML="Schedule"
+        }
+        
+    </script>
+</Head>
+<body>  
+    <h1 id="myh1" onclick="ChgStyle()">About Me: <i>Xinyi Zheng</i></h1>
+    <h2><img id="xinyi" src="Xinyi.jpg" alt="changing image" onmouseover="ChgToXinyi()" onmouseout="ChgToMe()"/></h2>
+    <hr>
+    <p>My home town is in Wenzhou, Zhejiang. The best way to contact me is through e-mail: <span>xzheng1@babson.edu</span>.</p>
+    <p id="x">My daily routine:</p> <button onclick="changedaily()">Click Here</button>
+    <ol>
+        <li>Wake Up at 8:30</li>
+        <li>Brush teeth</li>
+        <li>Breakfast</li>
+        <li>GO TO WOTK / TAKE CLASS</li>
+        <li>Lunch</li>
+        <li>Work Until 16:00</li>
+        <li>Free time options:
+            <ul>
+                <li>Go To Gym</li>
+                <li>Playing Legos</li>
+                <li>Dancing</li>
+                <li>Hang out with my friends</li>
+                <li>Homework!</li>
+            </ul>
+        </li>
+    </ol>
+    <hr>
+    <p class="facts">I have two little brothers and I love cooking.</p>
+    <hr>
+    <h3><a href="interests.html">My Interests</a></h3>
+</body>
+</html>
