@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>JS Branching In-Class Activity</title>
+	<script>
+		function change1()
+		{
+			if (document.getElementById("pw").value == "redsox"||"yankees") document.getElementById("back").style.backgroundColor="green";
+			else document.getElementById("back").style.backgroundColor="red"
+		}
+		function change2()
+		{
+			if (document.getElementById("L").checked) document.getElementById("h1").style.fontSize="30pt";
+			else document.getElementById("h1").style.fontSize="18pt";
+		}
+		function change3()
+		{
+			if (document.getElementById("pw").value == "redsox"||"yankees") 
+			document.getElementById("back").style.backgroundColor="red", document.getElementById("pw").value="dolphins";
+			else if (document.getElementById("pw").value == "") document.getElementById("back").style.backgroundColor="null";
+			else document.getElementById("back").style.backgroundColor="green", document.getElementById("pw").value="redsox";
+		}
+
+	</script>
+  </head>
+  <body id="back">
+	<h1 style="font-size:24pt" id="h1">JS Branching In-Class Activity</h1>
+	<p>Instructions: When the user enters redsox or yankees as the password and 
+		clicks the Login button, the page background color should turn to green.  
+		Any other password should turn the background color to red when the login 
+		button is pressed.  When the user selects a large font size, the font size 
+		of the h1 tag should become 30pt.  If the user selects a small font size, 
+		the font size of the h1 tag should become 18pt.  If the user clicks the 
+		Toggle button when the background is green, the background color will change 
+		to red and the entry in the password box will change to dolphins. If the user 
+		clicks the Toggle button when the background is red, the background color 
+		will change to green and the entry in the password box will change to redsox.  
+		If the background color was neither red nor green when the Toggle button is 
+		clicked, nothing should happen.</p>
+	<hr />
+	<p>Enter password: <input type="text" name="pw" id="pw"/><br /><button onclick="change1()">Login</button></p>
+	<p>H1 Font Size: Large: <input type="radio" name="fz" value="L" id="L" onclick="change2()" /> Small <input type="radio" name="fz" value="S" id="L" onclick="change2()" /></p>
+	<p><button onclick="change3()">Toggle Page Background Color</button></p>
+  </body>
+</html>
