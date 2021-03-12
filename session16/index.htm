@@ -1,0 +1,26 @@
+<!DOCTYPE html >
+<html lang="en">
+<Head>
+    <script>
+        window.onload = function() {
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            var img = document.getElementById("me");
+           ctx.drawImage(img, 10, 10);
+        };
+        </script>
+</Head>
+<body>
+<p>Image to use:</p>
+
+<img id="me" width="430" height="260"
+src="me.jpg" alt="myphoto">
+
+<p>Canvas:</p>
+
+<canvas id="myCanvas" width="450" height="290"
+style="border:1px solid #d3d3d3">
+</canvas>
+
+</body>
+</html>
