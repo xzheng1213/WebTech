@@ -1,0 +1,147 @@
+<!DOCTYPE html >
+<html lang="en">
+<Head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="XIANG SHANG" />
+    <title>Xiangshanghui Group: Our Value</title>
+    <link rel = "stylesheet" type = "text/css" href = "form.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson%20Text">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Katibeh">
+    <style>
+        .navbar {overflow: hidden}
+        .navbar a {font-family: 'Crimson Text'; float: right; font-weight: bold; font-size: 18px; color:black; text-align: center; padding: 14px 16px; text-decoration: none}
+        img{float: left; margin-top: 10px; margin-left: 10px}
+        .dropdown{position: relative; float: right;}
+        .dropdown-content {line-height: 0.6px; display: none; position: absolute; min-width: 300px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1}
+        .dropdown:hover .dropdown-content{display: block}
+        body{background-color: rgb(209, 209, 209)}
+        button{text-align: left; margin-left: 10px}
+        * {box-sizing: border-box}
+        .value {
+            float: left;
+            width: 50%;
+            padding: 10px;
+            height: 850px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both
+        }
+        h1 {font-family: 'Katibeh'; font-size: 50px; color:gray; line-height: 10%; text-align: right; margin-right: 100px}
+        h2 {font-family: 'Times New Roman'; font-size: 30px; text-align: right; margin-right: 100px}
+        .text {font-family: 'Times New Roman'; font-size: 18px; text-align: right; margin-right: 100px; line-height: 50%}
+        .valueimg {float: right; margin-right: 150px}
+        .contact {text-align: center}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#hide").click(function(){
+            $("p").hide();
+          });
+          $("#show").click(function(){
+            $("p").show();
+          });
+        });
+        </script>
+</Head>
+<Body>
+    <div class="top">
+        <a href="index.htm"><img id="logo" src="Logo.png" alt="logo" width="120"></a>
+        <div class="navbar">
+            <p><a href="contact.htm">CONTACT ME</a></p>
+            <p><a href="development.htm">FUTURE DEVELOPMENT</a></p>
+            <p><a href="responsibility.htm">CORPERATE RESPONSIBILITY</a></p>
+            <p><a href="history.htm">HISTORY & HERITAGE</a></p>
+            <p><a href="value.htm">OUR VALUE</a></p>
+            <div class="dropdown">
+                <span><a href="brand.htm">OUR BRAND</a></span>
+                <br>
+                <div class="dropdown-content">
+                    <p><a href="brand.htm">Overview</a></p>
+                    <p><a href="qsltresort.htm">Qui Shui Lan Ting Resort</a></p>
+                    <p><a href="shuiguo.htm">Shui Guo Hot Spring</a></p>
+                    <p><a href="ziwei.htm">Myrtle Restuarant</a></p>
+                </div>
+            </div>
+            <p><a href="about.htm">ABOUT US</a></p>
+            <br><br><br><br><br><br><br><br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="value">
+            <br><br><br><br><br>
+            <img src="value.PNG" alt="value" class="valueimg">
+        </div>
+        <div class="value">
+            <h1>Core Values</h1>
+            <button id="hide">Hide</button><button id="show">Show</button>
+            <br>
+            <h2>Customer First</h2>
+            <p class="text" id="show">Establish and maintain good interpersonal relationship with customers</p>
+            <p class="text" id="show">Listen to customer needs and actively discover customer needs</p>
+            <p class="text" id="show">High quality service, actively meet customer needs</p>
+            <h2>Striving For Excellence</h2>
+            <p class="text" id="show">Take the company's business as your own, take the initiative to take the position</p>
+            <p class="text" id="show">Encounter problems, do not make excuses, actively look for solutions</p>
+            <p class="text" id="show">Be responsible for work goals and final results</p>
+            <h2>Pursuit of the Ultimate</h2>
+            <p class="text" id="show">Service strives for high standards and pays attention to every detail through advance, memorized</p>
+            <p class="text" id="show">Family type service, for customers to bring touched and surprise</p>
+            <h2>Respect & Equality</h2>
+            <p class="text" id="show">Managers should respect the personality of employees</p>
+            <p class="text" id="show">Communication! Pay attention to staff opinions, to serve staff</p>
+            <p class="text" id="show">we must resolutely abandon the arrogant management and bureaucratic style of officials</p>
+            <h2>Efficient Synergy</h2>
+            <p class="text" id="show">Have a big picture, put corporate interests above departmental and personal interests</p>
+            <p class="text" id="show">On the premise of doing your job well, and oriented towards accomplishing the common goal</p>
+            <p class="text" id="show">Take the initiative to take on the work of the fuzzy zone and make up for each other.</p>
+        </div>
+    </div>
+    <div class="contactus">
+        <div class="container">
+            <div style="text-align:center">
+                <h2 class="contact">Contact US</h2>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="xshmap.PNG" alt="xshmap" class="xshmap" style="width:100%">
+                </div>
+                <div class="column">
+                    <form action="mailer.php" method="post">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city">
+                        <br>
+                        <p>Gender:
+                            Male<input type="radio" name="gender" id="male" value="male" />
+                            Female<input type="radio" name="gender" id="female" value="female" />
+                        </p>
+                        <label for="e-mail">E-mail</label>
+                        <input type="text" id="e-mail" name="e-mail">
+                        <label for="area">Interested Area</label>
+                        <select name="area" id="area">
+                            <option value="Partnership">Partnership</option>
+                            <option value="Job">Job Application</option>
+                            <option value="store">Open A Hotel</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <br><br>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write Here..." rows="5" cols="29"></textarea>
+                        <input type="submit" value="submit" name="submit">
+                        <input type="reset" value="reset" name="reset">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</Body>
+</html>

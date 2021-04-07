@@ -1,0 +1,177 @@
+<!DOCTYPE html >
+<html lang="en">
+<Head>
+<!--most part in the text section is direct translation from Chinese-->
+<!--the profilo section: it looks different in chrome(wired) and explorer(normal)-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="XIANG SHANG" />
+    <title>Xiangshanghui Group: About US</title>
+    <link rel = "stylesheet" type = "text/css" href = "form.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson%20Text">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Katibeh">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Scheherazade">
+    <style>
+        body {background-color: rgb(209, 209, 209)}
+        h3 {text-align: center; font-family: 'Times New Roman';font-size: 50px}
+        div.top {position: relative; height: 800px}
+        .navbar {overflow: hidden}
+        .navbar a {font-family: 'Crimson Text'; float: right; font-weight: bold; font-size: 18px; color:rgb(41, 40, 40); text-align: center; padding: 14px 16px; text-decoration: none}
+        img {float: left; margin-top: 10px; margin-left: 10px}
+        img.xp {margin-left: 120px; width: 350px}
+        img.sp {float: right; margin-right: 120px; width: 350px}
+        .dropdown {position: relative; float: right;}
+        .dropdown-content {line-height: 0.6px; display: none; position: absolute; min-width: 300px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1}
+        .dropdown:hover .dropdown-content {display: block}
+        .shang {float: right}
+        .text2 {float: right}
+        .xsh2 {float: right; margin-right: 75px}
+        div.profolio {position: relative; height: 900px; margin-left: 150px}
+        textarea {font-family: 'Scheherazade'; line-height: 85%; color:rgb(41, 40, 40); font-weight: bold; font-size: 25px; resize: none; background: transparent; border: none}
+        div.absolute {position: absolute; width: 50%; bottom: 10px}
+        div.aboutme {height: 420px}
+        div.image.me {float: right; padding-right: 10px}
+        .mytext {font-size: 23px; margin-right: 150px; padding-top: 25px; font-family: 'Raleway'}
+        h1 {font-size: 35px}
+        table {font-size: 15px; font-family: 'Raleway'}
+        h2 {font-family: 'Katibeh'; font-size: 50px; color:gray; line-height: 10%}
+    </style>
+    <script>
+        function mouseOver()
+        {
+            document.getElementById("word1").style.fontWeight="900";
+            document.getElementById("word2").style.fontWeight="900";
+        }
+        function mouseOut()
+        {
+            document.getElementById("word1").style.fontWeight="Normal";
+            document.getElementById("word2").style.fontWeight="Normal";
+        }
+        function changetext()
+        {
+            document.getElementById("word3").innerText="Xinyi Zheng";
+        }
+    </script>
+</Head>
+<Body>
+    <div class="top">
+        <div class="menu">
+            <a href="index.htm"><img id="logo" src="Logo.png" alt="logo" width="120"></a>
+            <div class="navbar">
+               <p><a href="contact.htm">CONTACT ME</a></p>
+               <p><a href="development.htm">FUTURE DEVELOPMENT</a></p>
+               <p><a href="responsibility.htm">CORPERATE RESPONSIBILITY</a></p>
+               <p><a href="history.htm">HISTORY & HERITAGE</a></p>
+               <p><a href="value.htm">OUR VALUE</a></p>
+               <div class="dropdown">
+                    <span><a href="brand.htm">OUR BRAND</a></span>
+                    <br>
+                    <div class="dropdown-content">
+                        <p><a href="brand.htm">Overview</a></p>
+                        <p><a href="qsltresort.htm">Qui Shui Lan Ting Resort</a></p>
+                        <p><a href="shuiguo.htm">Shui Guo Hot Spring</a></p>
+                        <p><a href="ziwei.htm">Myrtle Restuarant</a></p>
+                   </div>
+                </div>
+                <p><a href="about.htm">ABOUT US</a></p>
+                <br><br><br><br><br><br><br><br>
+            </div>
+        </div>
+        <div class="xiang">
+            <img src="xiang.PNG" alt="象" class="xp">
+            <br><br><br><br><br><br><br>
+            <div class="text1">
+                <h1 id="word1" onmousemove="mouseOver()" onmouseout="mouseOut()">"XIANG"</h1>
+                <table>
+                    <tr><td>Chose From Tao Te Ching, Written By Lao Tzu</td></tr>
+                    <tr><td>"Great music is faintly heard; Great form has no contour."</td></tr>
+                    <tr><td><a href="http://drrebornlai.blogspot.com/2013/11/blog-post_2116.html">"大音希声，大象无形。"</a></td></tr>
+                    <tr><td>The world's greatest grandeur lofty and magnificant style and realm</td></tr>
+                    <tr><td>often do not adhere to certain things and patters</td></tr>
+                    <tr><td>but show the vast apperance and scene</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="Shang">
+            <img src="shang.PNG" alt="上" class="sp">
+            <br><br><br><br><br>
+            <div class="text2">
+                <h1 id="word2" onmousemove="mouseOver()" onmouseout="mouseOut()">"SHANG"</h1>
+                <table>
+                    <tr><td>In Chinese, word "SHANG" had the meaning of "high" & "far" & "grow"</td></tr>
+                    <tr><td>An indication of high standard, better quality, and vision</td></tr>
+                    <tr><td>Becoming a leading firm in hospitality industry in China</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="profolio">
+        <img src="xsh2.PNG" alt="xsh2" class="xsh2" width="600">
+        <div class="absolute">
+            <h2>GROUP</h2>
+            <h2>PROFILE</h2>
+            <textarea id="group" name="group" rows="9" cols="25">
+    Xiang Shang Hui Group, founded in Beijing in 2019, is the integration of hotel and catering enterprises investment, operation and management in one integrated service-oriented group, which operates a number of chain hotels, such as Qushui Lanting, Shuibao, Tangquan Life, Shanghui, and so on, covering accommodation, catering, health care, leisure, entertainment and other living areas, has been distributed in Beijing, Shanghai, Hangzhou, Wuhan, South Beijing, Shenzhen and other domestic first-tier, new first-tier cities.
+    Group has a high-quality hotel management personnel and professional managers, adhering to the "pursuit of the ultimate, customer first." The company values, help the enterprise business combination, people and people community focus, is committed to become the urban micro-holiday industry support continued leaders, for the urban elite, urban youth and new consumer groups to create a new ideal lifestyle space for urban cultureMing construction and civic social life continue to explore, create art aesthetic immersive experience.
+            </textarea>
+        </div>
+    </div>
+    <hr>
+    <h3 id="word3" onmousemove="changetext()">About Me</h3>
+    <div class="aboutme">
+        <img src="me.jpg" alt="me" class="me" width="580" style="margin-left:150px; margin-right:150px" usemap="#mymap">
+        <map name="mymap">
+            <area shape="rect" coords="356,182,434,321" href="aboutme.htm" alt="selfintroduction">
+            <area shape="rect" coords="0,0,284,387" href="interests.htm" alt="moreaboutme">
+        </map>
+        <p class="mytext">My name is Xinyi Zheng. Xiangshanghui Group is our family business. We hope we can promote a lifestyle for the young generation. The aim of the company is to provide a chance for people to escape from the messy and busy life and find a way to relax as well as interact with others with lower cost. Currently, the company is under expanding phrase. We hope to meet and work with people who shared the same ideas and interests with us. If you are interested to learn or join in the team, you can put your information in the following section: Contact us. Hope to see you!</p>
+    </div>
+    <hr>
+    <div class="contactus">
+        <div class="container">
+            <div style="text-align:center">
+                <h2>Contact US</h2>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="xshmap.PNG" alt="xshmap" class="xshmap" style="width:100%">
+                    <!--I want to insert a google map which need knowledge in javascript-->
+                </div>
+                <div class="column">
+                    <form action = "mailer.php" method = "post">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city">
+                        <br>
+                        <p>Gender:
+                            Male<input type="radio" name="gender" id="male" value="male" />
+                            Female<input type="radio" name="gender" id="female" value="female" />
+                        </p>
+                        <label for="e-mail">E-mail</label>
+                        <input type="text" id="e-mail" name="e-mail">
+                        <label for="area">Interested Area</label>
+                        <select name="area" id="area">
+                            <option value="Partnership">Partnership</option>
+                            <option value="Job">Job Application</option>
+                            <option value="store">Open A Hotel</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <br><br>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write Here..." rows="5" cols="29"></textarea>
+                        <input type="submit" value="submit" name="submit">
+                        <input type="reset" value="reset" name="reset">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</Body>
+</html>
