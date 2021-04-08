@@ -4,125 +4,239 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="XIANG SHANG" />
-    <title>Xiangshanghui Group: Our Value</title>
-    <link rel = "stylesheet" type = "text/css" href = "form.css" />
-    <link rel = "stylesheet" type = "text/css" href = "timeline.css" />
+    <title>Xiangshanghui Group: History</title>
+    <link rel = "stylesheet" type = "text/css" href = "container.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson%20Text">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Katibeh">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800'>
+    <link rel="stylesheet" href="container.css">
     <style>
         .navbar {overflow: hidden}
         .navbar a {font-family: 'Crimson Text'; float: right; font-weight: bold; font-size: 18px; color:black; text-align: center; padding: 14px 16px; text-decoration: none}
-        img{float: left; margin-top: 10px; margin-left: 10px}
-        .dropdown{position: relative; float: right;}
+        img {float: left; margin-top: 10px; margin-left: 10px}
+        .dropdown{position: relative; float: right}
         .dropdown-content {line-height: 0.6px; display: none; position: absolute; min-width: 300px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1}
         .dropdown:hover .dropdown-content{display: block}
-        h1 {font-family: 'Katibeh'; font-size: 50px; color:gray; line-height: 10%; text-align: center}
-        h2 {font-family: 'Times New Roman'; font-size: 30px}
-        .top {background-color: rgb(209, 209, 209)}
+        * {box-sizing: border-box}
+
+input[type=text], radio, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: horizontal
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=reset] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049
+}
+
+input[type=reset]:hover {
+    background-color: #45a049
+}
+
+.containe {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0
+    }
+}
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-    function selectBGcolor()
-    {
-        var BGcolor = new Array("pink","grey"," rgb(209, 209, 209)");
-        document.getElementById("body").style.backgroundColor=BGcolor[Math.floor(Math.random()*3)];
-    }
-    $(document).ready(function(){
-    $("#flip").click(function(){
-    $("#panel").slideToggle("slow");
-    });
-    });
-</script>
+        function selectBGcolor()
+        {
+            var BGcolor = new Array("pink","grey"," rgb(209, 209, 209)");
+            document.getElementById("timeline").style.backgroundColor=BGcolor[Math.floor(Math.random()*3)];
+        }
+        $(document).ready(function(){
+        $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+        });
+        });
+        function vaildateForm()
+        {
+            if (document.getElementById("fname").value == "")
+            {
+                alert("First Name must be filled out");
+            }
+            else if (document.getElementById("lname").value == "")
+            {
+                alert("Last Name must be filled out");
+            }
+            else if (document.getElementById("e-mail").value == "")
+            {
+                alert("E-mail must be filled out");
+            }
+            else if (document.getElementById("subject").value == "")
+            {
+                alert("Subject Area must be filled out");
+            }
+            else
+            {
+                return true;
+            }
+            return false;
+        }
+    </script>
 </Head>
-<Body id="body" onload="selectBGcolor()">
+<Body>
     <div class="top">
-        <a href="index.htm"><img id="logo" src="Logo.png" alt="logo" width="120"></a>
-        <div class="navbar">
-          <p><a href="credit.htm">CREDIT</a></p>
-            <p><a href="contact.htm">CONTACT ME</a></p>
-            <p><a href="development.htm">FUTURE DEVELOPMENT</a></p>
-            <p><a href="responsibility.htm">CORPERATE RESPONSIBILITY</a></p>
-            <p><a href="history.htm">HISTORY & HERITAGE</a></p>
-            <p><a href="value.htm">OUR VALUE</a></p>
-            <div class="dropdown">
-                <span><a href="brand.htm">OUR BRAND</a></span>
-                <br>
-                <div class="dropdown-content">
-                    <p><a href="brand.htm">Overview</a></p>
-                    <p><a href="qsltresort.htm">Qui Shui Lan Ting Resort</a></p>
-                    <p><a href="shuiguo.htm">Shui Guo Hot Spring</a></p>
-                    <p><a href="ziwei.htm">Myrtle Restuarant</a></p>
+        <div class="menu">
+            <a href="index.htm"><img id="logo" src="Logo.png" alt="logo" width="120"></a>
+            <div class="navbar">
+               <p><a href="credit.htm">CREDIT</a></p>
+               <p><a href="contact.htm">CONTACT ME</a></p>
+               <p><a href="development.htm">FUTURE DEVELOPMENT</a></p>
+               <p><a href="responsibility.htm">CORPERATE RESPONSIBILITY</a></p>
+               <p><a href="history.htm">HISTORY & HERITAGE</a></p>
+               <p><a href="value.htm">OUR VALUE</a></p>
+               <div class="dropdown">
+                    <span><a href="brand.htm">OUR BRAND</a></span>
+                    <br>
+                    <div class="dropdown-content">
+                        <p><a href="brand.htm">Overview</a></p>
+                        <p><a href="qsltresort.htm">Qui Shui Lan Ting Resort</a></p>
+                        <p><a href="shuiguo.htm">Shui Guo Hot Spring</a></p>
+                        <p><a href="ziwei.htm">Myrtle Restuarant</a></p>
+                   </div>
                 </div>
+                <p><a href="about.htm">ABOUT US</a></p>
+                <br><br><br><br><br><br><br><br><br>
             </div>
-            <p><a href="about.htm">ABOUT US</a></p>
-            <br><br><br><br><br><br><br><br>
         </div>
     </div>
-    <h1>Our Historical Development</h1>
-    <br>
-    <div class="timeline">
-        <div class="container1 left">
-          <div class="content1">
-            <h2 id="flip">2021</h2>
-            <p id="panel">See the plan in <a href="development.htm">Future Development</a></p>
-          </div>
-        </div>
-        <div class="container1 right">
-          <div class="content1">
-            <h2>2019</h2>
-            <p>Luxury Resort Hotel Brand</p>
-            <ul>
-                <li>Hangzhou Qu Shui Lan Ting Resort</li>
-            </ul>
-            <p>Light Luxury Hot Spring Brand</p>
-            <ul>
-                <li>Shanghai Shui Guo Hot Spring</li>
-                <li>Hangzhou Shui Guo Hot Spring</li>
-            </ul>
-            <p>Buiness Hotel Brand</p>
-            <ul>
-                <li>Beijing Xiang Shang Hui Hotel</li>
-            </ul>
-          </div>
-        </div>
-        <div class="container1 left">
-          <div class="content1">
-            <h2>2018</h2>
-            <p>Business Hotel Brand</p>
-            <ul>
-                <li>Wuhan Shan Shui You Xiang Feng Hotel</li>
-                <li>Wuhan Yu Hotel</li>
-            </ul>
-          </div>
-        </div>
-        <div class="container1 right">
-          <div class="content1">
-            <h2>2016</h2>
-            <p>Luxury Resort Hotel Brand</p>
-            <ul>
-                <li>Wuhan Qu Shui Lan Ting Resort</li>
-            </ul>
-          </div>
-        </div>
-        <div class="container1 left">
-          <div class="content1">
-            <h2>2011</h2>
-            <p>Luxury Resort Hotel Brand</p>
-            <ul>
-                <li>Beijing Qu Shui Lan Ting Resort</li>
-            </ul>
-          </div>
-        </div>
-        <div class="container1 right">
-          <div class="content1">
-            <h2>2007</h2>
-            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    <hr>
+    <div class="container">
+        <h1 class="title">History & Heritage</h1>
+        <div class="timeline">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url(2021.jpg);" data-year="2021">
+                <div class="swiper-slide-content"><span class="timeline-year">2021</span>
+                  <h4 class="timeline-title" id="flip">Future Plan</h4>
+                  <p class="timeline-text" id="panel">See the plan in <a href="development.htm">Future Development</a></p>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image: url(2019.jpg);" data-year="2019">
+                <div class="swiper-slide-content"><span class="timeline-year">2019</span>
+                  <h4 class="timeline-title">New Hotels Open in 2019</h4>
+                  <p class="timeline-text" style="font-size: 20px">Luxury Resort Hotel Brand</p>
+                  <ul class="timeline-text">
+                      <li>Hangzhou Qu Shui Lan Ting Resort</li>
+                  </ul>
+                  <p class="timeline-text" style="font-size: 20px">Light Luxury Hot Spring Brand</p>
+                  <ul class="timeline-text">
+                      <li>Shanghai Shui Guo Hot Spring</li>
+                      <li>Hangzhou Shui Guo Hot Spring</li>
+                  </ul>
+                  <p class="timeline-text" style="font-size: 20px">Buiness Hotel Brand</p>
+                  <ul class="timeline-text">
+                      <li>Beijing Xiang Shang Hui Hotel</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image: url(2018.jpg);" data-year="2018">
+                <div class="swiper-slide-content"><span class="timeline-year">2018</span>
+                  <h4 class="timeline-title">New Hotels Open in 2018</h4>
+                  <p class="timeline-text" style="font-size: 20px">Business Hotel Brand</p>
+                  <ul class="timeline-text">
+                      <li>Wuhan Shan Shui You Xiang Feng Hotel</li>
+                      <li>Wuhan Yu Hotel</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image: url(2016.jpg);" data-year="2016">
+                <div class="swiper-slide-content"><span class="timeline-year">2016</span>
+                  <h4 class="timeline-title">New Hotels Open in 2016</h4>
+                  <p class="timeline-text" style="font-size: 20px">Luxury Resort Hotel Brand</p>
+                  <ul class="timeline-text">
+                      <li>Wuhan Qu Shui Lan Ting Resort</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image: url(2011.jpg);" data-year="2011">
+                <div class="swiper-slide-content"><span class="timeline-year">2011</span>
+                  <h4 class="timeline-title">New Hotels Open in 2011</h4>
+                  <p class="timeline-text" style="font-size: 20px">Luxury Resort Hotel Brand</p>
+                  <ul class="timeline-text">
+                      <li>Beijing Qu Shui Lan Ting Resort</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide" style="background-image: url(2007.jpg);" data-year="2007">
+                <div class="swiper-slide-content"><span class="timeline-year">2007</span>
+                  <h4 class="timeline-title">The company established in 2007.</h4>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </div>
       </div>
+      
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js'></script>
+      <script>
+        var timelineSwiper = new Swiper ('.timeline .swiper-container', {
+        direction: 'vertical',
+        loop: false,
+        speed: 1600,
+        pagination: '.swiper-pagination',
+        paginationBulletRender: function (swiper, index, className) {
+        var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
+        return '<span class="' + className + '">' + year + '</span>';
+        },
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        breakpoints: {
+        768: {
+        direction: 'horizontal',
+        }
+        }
+        });
+      </script>
     <hr>
     <div class="contactus">
-        <div class="container">
+        <div class="containe">
             <div style="text-align:center">
                 <h2>Contact US</h2>
             </div>
@@ -132,36 +246,36 @@
                     <!--I want to insert a google map which need knowledge in javascript-->
                 </div>
                 <div class="column">
-                  <form action = "mailer.php" method = "post">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname">
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname">
-                    <label for="country">Country</label>
-                    <input type="text" id="country" name="country">
-                    <label for="city">City</label>
-                    <input type="text" id="city" name="city">
-                    <br>
-                    <p>Gender:
-                      Male<input type="radio" name="gender" id="male" value="male" />
-                      Female<input type="radio" name="gender" id="female" value="female" />
-                    </p>
-                    <label for="e-mail">E-mail</label>
-                    <input type="text" id="e-mail" name="e-mail">
-                    <label for="area">Interested Area</label>
-                    <select name="area" id="area">
-                        <option value="Partnership">Partnership</option>
-                        <option value="Job">Job Application</option>
-                        <option value="store">Open A Hotel</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <br><br>
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write Here..." rows="5" cols="29"></textarea>
-                    <input type="submit" value="submit" name="submit">
-                    <input type="reset" value="reset" name="reset">
-                </form>
-                </div>
+                  <form action = "mailer.php" method = "post" onsubmit="return vaildateForm()">
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname">
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname">
+                      <label for="country">Country</label>
+                      <input type="text" id="country" name="country">
+                      <label for="city">City</label>
+                      <input type="text" id="city" name="city">
+                      <br>
+                      <p>Gender:
+                          Male<input type="radio" name="gender" id="male" value="male" />
+                          Female<input type="radio" name="gender" id="female" value="female" />
+                      </p>
+                      <label for="e-mail">E-mail</label>
+                      <input type="text" id="e-mail" name="e-mail">
+                      <label for="area">Interested Area</label>
+                      <select name="area" id="area">
+                          <option value="Partnership">Partnership</option>
+                          <option value="Job">Job Application</option>
+                          <option value="store">Open A Hotel</option>
+                          <option value="other">Other</option>
+                      </select>
+                      <br><br>
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Write Here..." rows="5" cols="29"></textarea>
+                      <input type="submit" value="submit" name="submit">
+                      <input type="reset" value="reset" name="reset">
+                  </form>
+              </div>
             </div>
         </div>
     </div>

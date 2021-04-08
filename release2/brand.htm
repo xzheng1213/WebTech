@@ -78,6 +78,30 @@
         });
       });
     });
+    function vaildateForm()
+        {
+            if (document.getElementById("fname").value == "")
+            {
+                alert("First Name must be filled out");
+            }
+            else if (document.getElementById("lname").value == "")
+            {
+                alert("Last Name must be filled out");
+            }
+            else if (document.getElementById("e-mail").value == "")
+            {
+                alert("E-mail must be filled out");
+            }
+            else if (document.getElementById("subject").value == "")
+            {
+                alert("Subject Area must be filled out");
+            }
+            else
+            {
+                return true;
+            }
+            return false;
+        }
     </script>
 </Head>
 <Body>
@@ -223,7 +247,7 @@
                     <!--I want to insert a google map which need knowledge in javascript-->
                 </div>
                 <div class="column">
-                    <form action="mailer.php" method="post">
+                    <form action = "mailer.php" method = "post" onsubmit="return vaildateForm()">
                         <label for="fname">First Name</label>
                         <input type="text" id="fname" name="firstname">
                         <label for="lname">Last Name</label>

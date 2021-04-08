@@ -39,13 +39,37 @@
     <script>
         $(document).ready(function(){
           $("#hide").click(function(){
-            $("p").hide();
+            $(".text").hide();
           });
           $("#show").click(function(){
-            $("p").show();
+            $(".text").show();
           });
         });
-        </script>
+        function vaildateForm()
+        {
+            if (document.getElementById("fname").value == "")
+            {
+                alert("First Name must be filled out");
+            }
+            else if (document.getElementById("lname").value == "")
+            {
+                alert("Last Name must be filled out");
+            }
+            else if (document.getElementById("e-mail").value == "")
+            {
+                alert("E-mail must be filled out");
+            }
+            else if (document.getElementById("subject").value == "")
+            {
+                alert("Subject Area must be filled out");
+            }
+            else
+            {
+                return true;
+            }
+            return false;
+        }
+    </script>
 </Head>
 <Body>
     <div class="top">
@@ -81,24 +105,24 @@
             <button id="hide">Hide</button><button id="show">Show</button>
             <br>
             <h2>Customer First</h2>
-            <p class="text" id="show">Establish and maintain good interpersonal relationship with customers</p>
-            <p class="text" id="show">Listen to customer needs and actively discover customer needs</p>
-            <p class="text" id="show">High quality service, actively meet customer needs</p>
+            <p class="text" id="show1">Establish and maintain good interpersonal relationship with customers</p>
+            <p class="text" id="show1">Listen to customer needs and actively discover customer needs</p>
+            <p class="text" id="show1">High quality service, actively meet customer needs</p>
             <h2>Striving For Excellence</h2>
-            <p class="text" id="show">Take the company's business as your own, take the initiative to take the position</p>
-            <p class="text" id="show">Encounter problems, do not make excuses, actively look for solutions</p>
-            <p class="text" id="show">Be responsible for work goals and final results</p>
+            <p class="text" id="show1">Take the company's business as your own, take the initiative to take the position</p>
+            <p class="text" id="show1">Encounter problems, do not make excuses, actively look for solutions</p>
+            <p class="text" id="show1">Be responsible for work goals and final results</p>
             <h2>Pursuit of the Ultimate</h2>
-            <p class="text" id="show">Service strives for high standards and pays attention to every detail through advance, memorized</p>
-            <p class="text" id="show">Family type service, for customers to bring touched and surprise</p>
+            <p class="text" id="show1">Service strives for high standards and pays attention to every detail through advance, memorized</p>
+            <p class="text" id="show1">Family type service, for customers to bring touched and surprise</p>
             <h2>Respect & Equality</h2>
-            <p class="text" id="show">Managers should respect the personality of employees</p>
-            <p class="text" id="show">Communication! Pay attention to staff opinions, to serve staff</p>
-            <p class="text" id="show">we must resolutely abandon the arrogant management and bureaucratic style of officials</p>
+            <p class="text" id="show1">Managers should respect the personality of employees</p>
+            <p class="text" id="show1">Communication! Pay attention to staff opinions, to serve staff</p>
+            <p class="text" id="show1">we must resolutely abandon the arrogant management and bureaucratic style of officials</p>
             <h2>Efficient Synergy</h2>
-            <p class="text" id="show">Have a big picture, put corporate interests above departmental and personal interests</p>
-            <p class="text" id="show">On the premise of doing your job well, and oriented towards accomplishing the common goal</p>
-            <p class="text" id="show">Take the initiative to take on the work of the fuzzy zone and make up for each other.</p>
+            <p class="text" id="show1">Have a big picture, put corporate interests above departmental and personal interests</p>
+            <p class="text" id="show1">On the premise of doing your job well, and oriented towards accomplishing the common goal</p>
+            <p class="text" id="show1">Take the initiative to take on the work of the fuzzy zone and make up for each other.</p>
         </div>
     </div>
     <div class="contactus">
@@ -111,7 +135,7 @@
                     <img src="xshmap.PNG" alt="xshmap" class="xshmap" style="width:100%">
                 </div>
                 <div class="column">
-                    <form action="mailer.php" method="post">
+                    <form action = "mailer.php" method = "post" onsubmit="return vaildateForm()">
                         <label for="fname">First Name</label>
                         <input type="text" id="fname" name="firstname">
                         <label for="lname">Last Name</label>
