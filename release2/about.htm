@@ -52,6 +52,10 @@
         {
             document.getElementById("word3").innerText="Xinyi Zheng";
         }
+        function changeback()
+        {
+            document.getElementById("word3").innerText="About Me";
+        }
         function vaildateForm()
         {
             if (document.getElementById("fname").value == "")
@@ -145,14 +149,14 @@
         </div>
     </div>
     <hr>
-    <h3 id="word3" onmousemove="changetext()">About Me</h3>
+    <h3 id="word3" onmousemove="changetext()" onmouseout="changeback()">About Me</h3>
     <div class="aboutme">
         <img src="me.jpg" alt="me" class="me" width="580" style="margin-left:150px; margin-right:150px" usemap="#mymap">
         <map name="mymap">
             <area shape="rect" coords="356,182,434,321" href="aboutme.htm" alt="selfintroduction">
             <area shape="rect" coords="0,0,284,387" href="interests.htm" alt="moreaboutme">
         </map>
-        <p class="mytext">My name is Xinyi Zheng. Xiangshanghui Group is our family business. We hope we can promote a lifestyle for the young generation. The aim of the company is to provide a chance for people to escape from the messy and busy life and find a way to relax as well as interact with others with lower cost. Currently, the company is under expanding phrase. We hope to meet and work with people who shared the same ideas and interests with us. If you are interested to learn or join in the team, you can put your information in the following section: Contact us. Hope to see you!</p>
+        <p class="mytext">My name is Xinyi Zheng. Xiangshanghui Group is our family business. We hope we can promote a lifestyle for the young generation. The aim of the company is to provide a chance for people to escape from the messy and busy life and find a way to relax as well as interact with others with lower cost. Currently, the company is under expanding phrase. We hope to meet and work with people who shared the same ideas and interests with us. If you are interested to learn or join in the team, you can put your information in the following section: <a href="contact.htm">Contact us</a>. Hope to see you!</p>
     </div>
     <hr>
     <div class="contactus">
