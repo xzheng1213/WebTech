@@ -14,8 +14,15 @@
         .dropdown-content {line-height: 0.6px; display: none; position: absolute; min-width: 300px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1}
         .dropdown:hover .dropdown-content{display: block}
     </style>
+    <script>
+        function selectBGcolor()
+        {
+            var BGcolor = new Array("white","pink","grey","blue");
+            document.getElementById("body").style.backgroundColor=BGcolor[Math.floor(Math.random()*4)];
+        }
+    </script>
 </Head>
-<Body>
+<Body id="body" onload="selectBGcolor()">
     <div class="top">
         <div class="menu">
             <a href="index.htm"><img id="logo" src="Logo.png" alt="logo" width="120"></a>
